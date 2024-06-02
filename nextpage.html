@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Formulir Join Sektte</title>
+</head>
+<body>
+<div class="container">
+  <h1>Formulir Join Sekte</h1>
+  <form id="fans join form">
+    <div class="form-group">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Tanggal:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <label for="dropdown">Apakah kalian yakin ingin bergabung:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1">Ya</option>
+        <option value="option2">Tidak</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Jenis Kelamin:</label>
+      <input type="radio" id="radio1" name="radio" value="option1" checked>
+      <label for="radio1">Custom</label>
+      <input type="radio" id="radio2" name="radio" value="option2">
+      <label for="radio2">Tidak Ada Kelamin</label>
+    </div>
+    <div class="form-group">
+      <label for="textarea">Komentar:</label>
+      <textarea id="textarea" name="textarea" required></textarea>
+    </div>
+    <button type="button" onclick="submitForm()" class="button">Kirim</button>
+    <button type="button" onclick="window.location='index.html'" class="button">Kembali</button>
+  </form>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
